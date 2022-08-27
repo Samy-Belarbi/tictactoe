@@ -11,19 +11,21 @@ export const App = () => {
   const showGame = () => {
     return (
       <h1>
-        <span
-          className={span1Class}
-          onClick={disappear}
-          onAnimationEnd={launchGame}
-        >
-          Tic
-        </span>
-        <span className={span2Class} onClick={disappear}>
-          Tac
-        </span>
-        <span className={span3Class} onClick={disappear}>
-          Toe
-        </span>
+        <div>
+          <span
+            className={span1Class}
+            onClick={disappear}
+            onAnimationEnd={launchGame}
+          >
+            Tic
+          </span>
+          <span className={span2Class} onClick={disappear}>
+            Tac
+          </span>
+          <span className={span3Class} onClick={disappear}>
+            Toe
+          </span>
+        </div>
       </h1>
     );
   };

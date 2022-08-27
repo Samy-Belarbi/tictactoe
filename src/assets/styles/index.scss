@@ -35,27 +35,33 @@ body,
 
   h1 {
     font-size: 8em;
+    width: 100%;
     overflow: hidden;
-    span {
-      color: var(--tikYellow);
-      letter-spacing: -0.05em;
-      line-height: 0.8em;
-      display: block;
+    display: flex;
+    justify-content: center;
 
-      &:hover {
-        color: white;
-        cursor: pointer;
-      }
+    div {
+      span {
+        color: var(--tikYellow);
+        letter-spacing: -0.05em;
+        line-height: 0.8em;
+        display: block;
 
-      &.disappear {
-        animation: disappear 0.5s;
-        animation-fill-mode: forwards;
-        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: white;
+          cursor: pointer;
+        }
 
-        @keyframes disappear {
-          100% {
-            transform: translateX(100px);
-            opacity: 0;
+        &.disappear {
+          animation: disappear 0.5s;
+          animation-fill-mode: forwards;
+          transition: all 0.3s ease-in-out;
+
+          @keyframes disappear {
+            100% {
+              transform: translateX(100px);
+              opacity: 0;
+            }
           }
         }
       }
