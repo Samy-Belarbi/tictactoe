@@ -31,6 +31,7 @@ body,
   align-items: center;
   flex-direction: row-reverse;
   justify-content: center;
+  overflow: hidden;
 
   h1 {
     font-size: 8em;
@@ -40,6 +41,7 @@ body,
       line-height: 0.8em;
       max-width: 10%;
       display: block;
+      overflow: hidden;
 
       &:hover {
         color: white;
