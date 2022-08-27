@@ -35,13 +35,12 @@ body,
 
   h1 {
     font-size: 8em;
+    overflow: hidden;
     span {
       color: var(--tikYellow);
       letter-spacing: -0.05em;
       line-height: 0.8em;
-      max-width: 10%;
       display: block;
-      overflow: hidden;
 
       &:hover {
         color: white;
